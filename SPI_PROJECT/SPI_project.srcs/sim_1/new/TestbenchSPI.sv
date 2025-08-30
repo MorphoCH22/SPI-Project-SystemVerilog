@@ -6,10 +6,10 @@ bit transPulse;
 bit [3:0] selIn;
 
 bit [7:0] mDataIn;
-bit [7:0] s1DataIn;
+bit [3:0][7:0] sDataIn;
         
 bit [7:0] mDataOut;
-bit [7:0] s1DataOut;
+bit [3:0][7:0] sDataOut;
 
 
 always #10 clk = ~clk;
@@ -20,15 +20,15 @@ TopSPI cut  (
             .transPulse(transPulse),
             .selIn(selIn),
             .mDataIn(mDataIn),
-            .s1DataIn(s1DataIn),
+            .sDataIn(sDataIn),
             .mDataOut(mDataOut),
-            .s1DataOut(s1DataOut)
+            .sDataOut(sDataOut)
             );
 
 initial begin
     clk <= 0;
     mDataIn <= 8'd32;
-    s1DataIn <= 8'd10;
+    sDataIn[0] <= 8'd10;
     reset <= 0;
     repeat (5) @(posedge(clk))
     reset <= 1;

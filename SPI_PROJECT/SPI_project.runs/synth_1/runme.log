@@ -8,13 +8,13 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Wed Aug 27 23:16:05 2025
+  **** Start of session at: Sat Aug 30 14:44:26 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source TopSPI.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/utils_1/imports/synth_1/master.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/utils_1/imports/synth_1/master.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/utils_1/imports/synth_1/master.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/utils_1/imports/synth_1/master.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top TopSPI -part xc7z007sclg400-1
 Starting synth_design
@@ -24,32 +24,32 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 13196
+INFO: [Synth 8-7075] Helper process launched with PID 15116
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 830.254 ; gain = 473.926
+Starting Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 830.922 ; gain = 473.504
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'TopSPI' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/sources_1/new/TopSPI.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'MasterSPI' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/sources_1/new/MasterSPI.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'MasterSPI' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/sources_1/new/MasterSPI.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'SlaveSPI' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/sources_1/new/SlaveSPI.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'SlaveSPI' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/sources_1/new/SlaveSPI.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'TopSPI' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/sources_1/new/TopSPI.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'TopSPI' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/TopSPI.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'MasterSPI' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/MasterSPI.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'MasterSPI' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/MasterSPI.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SlaveSPI' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/SlaveSPI.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'SlaveSPI' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/SlaveSPI.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'TopSPI' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/TopSPI.sv:1]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 936.312 ; gain = 579.984
+Finished Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 937.145 ; gain = 579.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 936.312 ; gain = 579.984
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 937.145 ; gain = 579.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 936.312 ; gain = 579.984
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 937.145 ; gain = 579.727
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 936.312 ; gain = 579.984
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 937.145 ; gain = 579.727
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -57,15 +57,16 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input    4 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 5     
 +---Registers : 
-	                8 Bit    Registers := 2     
-	                4 Bit    Registers := 3     
-	                1 Bit    Registers := 4     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 6     
+	                1 Bit    Registers := 10    
 +---Muxes : 
-	   2 Input    8 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 9     
-	   3 Input    1 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 20    
+	   3 Input    1 Bit        Muxes := 5     
+	   6 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -84,20 +85,20 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1121.504 ; gain = 765.176
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1146.234 ; gain = 788.816
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1136.371 ; gain = 780.043
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1146.234 ; gain = 788.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1136.371 ; gain = 780.043
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1146.234 ; gain = 788.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -115,37 +116,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1337.906 ; gain = 981.578
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.512 ; gain = 986.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1337.906 ; gain = 981.578
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.512 ; gain = 986.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1337.906 ; gain = 981.578
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.512 ; gain = 986.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1337.906 ; gain = 981.578
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.512 ; gain = 986.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1337.906 ; gain = 981.578
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.512 ; gain = 986.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1337.906 ; gain = 981.578
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.512 ; gain = 986.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -161,46 +162,50 @@ Report Cell Usage:
 +------+-----+------+
 |      |Cell |Count |
 +------+-----+------+
-|1     |BUFG |     1|
-|2     |LUT1 |     4|
-|3     |LUT2 |     6|
-|4     |LUT3 |    21|
-|5     |LUT4 |     4|
-|6     |LUT6 |     2|
-|7     |FDRE |    28|
-|8     |FDSE |     1|
-|9     |IBUF |    20|
-|10    |OBUF |    16|
+|1     |BUFG |     2|
+|2     |LUT1 |     7|
+|3     |LUT2 |    10|
+|4     |LUT3 |    54|
+|5     |LUT4 |     6|
+|6     |LUT5 |     1|
+|7     |LUT6 |     7|
+|8     |FDRE |    70|
+|9     |FDSE |     4|
+|10    |IBUF |    47|
+|11    |OBUF |    40|
 +------+-----+------+
 
 Report Instance Areas: 
-+------+---------+----------+------+
-|      |Instance |Module    |Cells |
-+------+---------+----------+------+
-|1     |top      |          |   103|
-|2     |  master |MasterSPI |    36|
-|3     |  slave1 |SlaveSPI  |    30|
-+------+---------+----------+------+
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |   248|
+|2     |  master |MasterSPI  |    43|
+|3     |  slave1 |SlaveSPI   |    29|
+|4     |  slave2 |SlaveSPI_0 |    29|
+|5     |  slave3 |SlaveSPI_1 |    29|
+|6     |  slave4 |SlaveSPI_2 |    29|
++------+---------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1337.906 ; gain = 981.578
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.512 ; gain = 986.094
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1337.906 ; gain = 981.578
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1337.906 ; gain = 981.578
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.512 ; gain = 986.094
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.512 ; gain = 986.094
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1352.930 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1358.535 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1467.953 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1470.461 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: d5d74791
+Synth Design complete | Checksum: b1da8a42
 INFO: [Common 17-83] Releasing license: Synthesis
 20 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 1467.953 ; gain = 1117.836
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1467.953 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.runs/synth_1/TopSPI.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 1470.461 ; gain = 1119.422
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1470.461 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/synth_1/TopSPI.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file TopSPI_utilization_synth.rpt -pb TopSPI_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Aug 27 23:17:01 2025...
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 30 14:45:20 2025...

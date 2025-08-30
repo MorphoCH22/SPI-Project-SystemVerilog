@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Aug 27 23:17:55 2025
+| Date         : Sat Aug 30 14:46:19 2025
 | Host         : Moss running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TopSPI_control_sets_placed.rpt
 | Design       : TopSPI
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     7 |
-|    Minimum number of control sets                        |     7 |
+| Total control sets                                       |    13 |
+|    Minimum number of control sets                        |    13 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    29 |
+| Unused register locations in slices containing registers |    34 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     7 |
-| >= 0 to < 4        |     3 |
-| >= 4 to < 6        |     2 |
+| Total control sets |    13 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     6 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     0 |
+| >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
-| >= 14 to < 16      |     2 |
-| >= 16              |     0 |
+| >= 14 to < 16      |     4 |
+| >= 16              |     1 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,28 +58,34 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | No                     |               2 |            1 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               0 |            0 |
+| No           | Yes                   | No                     |               8 |            6 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              39 |           11 |
+| Yes          | Yes                   | No                     |             100 |           35 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+--------------------------+---------------------------+------------------+----------------+--------------+
-|  Clock Signal  |       Enable Signal      |      Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+--------------------------+---------------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG | master/selOut[0]_i_1_n_0 | master/SR[0]              |                1 |              1 |         1.00 |
-|  master/clkOut |                          |                           |                1 |              2 |         2.00 |
-|  clk_IBUF_BUFG |                          |                           |                1 |              2 |         2.00 |
-|  master/clkOut | slave1/state_reg_0       | master/selOut_reg[0]_0[0] |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG | master/state_reg_n_0     | master/count[3]_i_1_n_0   |                1 |              4 |         4.00 |
-|  master/clkOut | slave1/data[7]_i_2_n_0   | master/SR[0]              |                3 |             15 |         5.00 |
-|  clk_IBUF_BUFG | master/data[7]_i_1_n_0   | master/SR[0]              |                5 |             15 |         3.00 |
-+----------------+--------------------------+---------------------------+------------------+----------------+--------------+
++----------------+---------------------------+----------------------------+------------------+----------------+--------------+
+|  Clock Signal  |       Enable Signal       |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------+----------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                           |                            |                1 |              2 |         2.00 |
+|  clkOut_BUFG   | slave1/state_reg_0        | slave1/count[3]_i_1_n_0    |                1 |              4 |         4.00 |
+|  clkOut_BUFG   | slave2/state_reg_0        | slave2/count[3]_i_1__1_n_0 |                1 |              4 |         4.00 |
+|  clkOut_BUFG   | slave3/state_reg_0        | slave3/count[3]_i_1__2_n_0 |                1 |              4 |         4.00 |
+|  clkOut_BUFG   | slave4/state_reg_0        | slave4/count[3]_i_1__3_n_0 |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | master/sel[3]_i_2_n_0     | master/SR[0]               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | master/state_reg_n_0      | master/count[3]_i_1__0_n_0 |                1 |              4 |         4.00 |
+|  clkOut_BUFG   |                           | master/SR[0]               |                6 |              8 |         1.33 |
+|  clkOut_BUFG   | slave1/data[7]_i_1__0_n_0 | master/SR[0]               |                7 |             15 |         2.14 |
+|  clkOut_BUFG   | slave2/data[7]_i_1__1_n_0 | master/SR[0]               |                6 |             15 |         2.50 |
+|  clkOut_BUFG   | slave3/data[7]_i_1__2_n_0 | master/SR[0]               |                7 |             15 |         2.14 |
+|  clkOut_BUFG   | slave4/data[7]_i_1__3_n_0 | master/SR[0]               |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG | master/data[7]_i_1_n_0    | master/SR[0]               |                4 |             16 |         4.00 |
++----------------+---------------------------+----------------------------+------------------+----------------+--------------+
 
 

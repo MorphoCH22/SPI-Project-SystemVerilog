@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.runs/impl_1'
+HD_PWD='C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

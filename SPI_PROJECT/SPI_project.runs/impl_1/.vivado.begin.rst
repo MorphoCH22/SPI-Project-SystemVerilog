@@ -1,40 +1,20 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="moizc" Host="MOSS" Pid="14108" HostCore="8" HostMemory="016363286528">
+    <Process Command="vivado.bat" Owner="moizc" Host="MOSS" Pid="7048" HostCore="8" HostMemory="016363286528">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="moizc" Host="MOSS" Pid="17104" HostCore="8" HostMemory="016363286528">
+    <Process Command="vivado.bat" Owner="moizc" Host="MOSS" Pid="19360" HostCore="8" HostMemory="016363286528">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="moizc" Host="MOSS" Pid="16324" HostCore="8" HostMemory="016363286528">
+    <Process Command="vivado.bat" Owner="moizc" Host="MOSS" Pid="16412" HostCore="8" HostMemory="016363286528">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="moizc" Host="MOSS" Pid="7824" HostCore="8" HostMemory="016363286528">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="moizc" Host="MOSS" Pid="16648" HostCore="8" HostMemory="016363286528">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="moizc" Host="MOSS" Pid="17540" HostCore="8" HostMemory="016363286528">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="moizc" Host="MOSS" Pid="11660" HostCore="8" HostMemory="016363286528">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="moizc" Host="MOSS" Pid="15060" HostCore="8" HostMemory="016363286528">
+    <Process Command="vivado.bat" Owner="moizc" Host="MOSS" Pid="13548" HostCore="8" HostMemory="016363286528">
     </Process>
 </ProcessHandle>
