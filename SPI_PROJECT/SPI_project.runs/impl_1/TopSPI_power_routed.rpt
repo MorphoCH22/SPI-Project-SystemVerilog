@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Sat Aug 30 14:47:02 2025
+| Date             : Sat Aug 30 16:00:50 2025
 | Host             : Moss running 64-bit major release  (build 9200)
 | Command          : report_power -file TopSPI_power_routed.rpt -pb TopSPI_power_summary_routed.pb -rpx TopSPI_power_routed.rpx
 | Design           : TopSPI
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 18.916 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 21.471 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 18.169                           |
+| Dynamic (W)              | 20.723                           |
 | Device Static (W)        | 0.747                            |
 | Effective TJA (C/W)      | 11.5                             |
 | Max Ambient (C)          | 0.0                              |
@@ -52,15 +52,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.429 |      203 |       --- |             --- |
-|   LUT as Logic |     0.355 |       57 |     14400 |            0.40 |
-|   Register     |     0.059 |      110 |     28800 |            0.38 |
-|   BUFG         |     0.015 |        2 |        32 |            6.25 |
-|   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |     0.879 |      212 |       --- |             --- |
-| I/O            |    16.861 |       87 |       100 |           87.00 |
+| Slice Logic    |     0.406 |      171 |       --- |             --- |
+|   LUT as Logic |     0.337 |       44 |     14400 |            0.31 |
+|   Register     |     0.057 |       92 |     28800 |            0.32 |
+|   BUFG         |     0.012 |        2 |        32 |            6.25 |
+|   Others       |     0.000 |        8 |       --- |             --- |
+| Signals        |     1.129 |      191 |       --- |             --- |
+| I/O            |    19.189 |       89 |       100 |           89.00 |
 | Static Power   |     0.747 |          |           |                 |
-| Total          |    18.916 |          |           |                 |
+| Total          |    21.471 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,11 +70,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     1.620 |       1.491 |      0.129 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     1.405 |       1.365 |      0.040 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     1.848 |       1.719 |      0.129 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     1.596 |       1.556 |      0.040 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18    |       1.800 |     7.901 |       7.900 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     9.003 |       9.002 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -144,12 +144,11 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| TopSPI   |    18.169 |
-|   master |     0.231 |
-|   slave1 |     0.203 |
-|   slave2 |     0.201 |
-|   slave3 |     0.250 |
-|   slave4 |     0.200 |
+| TopSPI   |    20.723 |
+|   master |     0.213 |
+|   slave1 |     0.339 |
+|   slave2 |     0.363 |
+|   slave3 |     0.386 |
 +----------+-----------+
 
 
