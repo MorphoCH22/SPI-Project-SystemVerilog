@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/sim_1/new/TestbenchSPI.sv,1756350031,systemVerilog,,,,TestbenchSPI,,uvm,,,,,,
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/sources_1/new/MasterSPI.sv,1756350873,systemVerilog,,C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/sources_1/new/SlaveSPI.sv,,MasterSPI,,uvm,,,,,,
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/sources_1/new/SlaveSPI.sv,1756349542,systemVerilog,,C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/sources_1/new/TopSPI.sv,,SlaveSPI,,uvm,,,,,,
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/sources_1/new/TopSPI.sv,1756344972,systemVerilog,,C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/SPI_PROJECT/SPI_project/SPI_project.srcs/sim_1/new/TestbenchSPI.sv,,TopSPI,,uvm,,,,,,
