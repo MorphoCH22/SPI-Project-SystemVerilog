@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1756759530">
-  <File Type="PA-TCL" Name="TopSPI2.tcl"/>
-  <File Type="REPORTS-TCL" Name="TopSPI2_reports.tcl"/>
-  <File Type="INIT-TIMING" Name="TopSPI2_timing_summary_init.rpt"/>
-  <File Type="OPT-DCP" Name="TopSPI2_opt.dcp"/>
-  <File Type="OPT-DRC" Name="TopSPI2_drc_opted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="TopSPI2_methodology_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="TopSPI2.hwdef"/>
-  <File Type="OPT-TIMING" Name="TopSPI2_timing_summary_opted.rpt"/>
-  <File Type="OPT-RQA-PB" Name="TopSPI2_rqa_opted.pb"/>
-  <File Type="PWROPT-DCP" Name="TopSPI2_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="TopSPI2_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="TopSPI2_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="TopSPI2_placed.dcp"/>
-  <File Type="PLACE-IO" Name="TopSPI2_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="TopSPI2_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="TopSPI2_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="TopSPI2_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="TopSPI2_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="TopSPI2_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="TopSPI2_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="TopSPI2_timing_summary_placed.rpt"/>
-  <File Type="PLACE-RQA-PB" Name="TopSPI2_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="TopSPI2_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="TopSPI2_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="TopSPI2_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="TopSPI2_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-TIMING" Name="TopSPI2_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="TopSPI2_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="TopSPI2_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="TopSPI2_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="TopSPI2_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="TopSPI2_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="TopSPI2_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="TopSPI2_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TopSPI2_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TopSPI2_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="TopSPI2_power_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="TopSPI2_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="TopSPI2_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="TopSPI2_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="TopSPI2_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="TopSPI2_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="TopSPI2_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="TopSPI2_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="TopSPI2_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="TopSPI2_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="TopSPI2_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="TopSPI2_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="TopSPI2_bus_skew_routed.rpx"/>
-  <File Type="ROUTE-RQS-PB" Name="TopSPI2_rqs_routed.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TopSPI2_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TopSPI2_postroute_physopt_bb.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1756761854">
+  <File Type="PA-TCL" Name="TopSPI.tcl"/>
+  <File Type="REPORTS-TCL" Name="TopSPI_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="TopSPI_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="TopSPI_opt.dcp"/>
+  <File Type="OPT-DRC" Name="TopSPI_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="TopSPI_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="TopSPI.hwdef"/>
+  <File Type="OPT-TIMING" Name="TopSPI_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="TopSPI_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="TopSPI_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="TopSPI_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="TopSPI_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="TopSPI_placed.dcp"/>
+  <File Type="PLACE-IO" Name="TopSPI_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="TopSPI_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="TopSPI_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="TopSPI_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="TopSPI_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="TopSPI_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TopSPI_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="TopSPI_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="TopSPI_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TopSPI_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="TopSPI_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="TopSPI_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="TopSPI_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="TopSPI_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="TopSPI_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="TopSPI_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="TopSPI_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="TopSPI_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="TopSPI_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="TopSPI_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="TopSPI_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TopSPI_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TopSPI_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="TopSPI_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="TopSPI_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="TopSPI_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="TopSPI_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="TopSPI_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="TopSPI_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="TopSPI_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="TopSPI_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="TopSPI_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="TopSPI_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="TopSPI_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="TopSPI_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="TopSPI_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="TopSPI_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TopSPI_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TopSPI_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TopSPI_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TopSPI_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TopSPI_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="TopSPI_bus_skew_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="TopSPI_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="TopSPI_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BG-BIT" Name="TopSPI2.bit"/>
-  <File Type="BG-BIN" Name="TopSPI2.bin"/>
-  <File Type="BITSTR-MSK" Name="TopSPI2.msk"/>
-  <File Type="BITSTR-RBT" Name="TopSPI2.rbt"/>
-  <File Type="BITSTR-NKY" Name="TopSPI2.nky"/>
-  <File Type="BITSTR-BMM" Name="TopSPI2_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="TopSPI2.mmi"/>
-  <File Type="PDI-FILE" Name="TopSPI2.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="TopSPI2_boot.pdi"/>
-  <File Type="PL-PDI-FILE" Name="TopSPI2_pld.pdi"/>
-  <File Type="RCFI_FILE" Name="TopSPI2.rcfi"/>
-  <File Type="CFI_FILE" Name="TopSPI2.cfi"/>
-  <File Type="RNPI_FILE" Name="TopSPI2.rnpi"/>
-  <File Type="NPI_FILE" Name="TopSPI2.npi"/>
-  <File Type="RBD_FILE" Name="TopSPI2.rbd"/>
+  <File Type="BG-BIT" Name="TopSPI.bit"/>
+  <File Type="BG-BIN" Name="TopSPI.bin"/>
+  <File Type="BITSTR-MSK" Name="TopSPI.msk"/>
+  <File Type="BITSTR-RBT" Name="TopSPI.rbt"/>
+  <File Type="BITSTR-NKY" Name="TopSPI.nky"/>
+  <File Type="BITSTR-BMM" Name="TopSPI_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="TopSPI.mmi"/>
+  <File Type="PDI-FILE" Name="TopSPI.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="TopSPI_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="TopSPI_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="TopSPI.rcfi"/>
+  <File Type="CFI_FILE" Name="TopSPI.cfi"/>
+  <File Type="RNPI_FILE" Name="TopSPI.rnpi"/>
+  <File Type="NPI_FILE" Name="TopSPI.npi"/>
+  <File Type="RBD_FILE" Name="TopSPI.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="TopSPI2.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="TopSPI2.sysdef"/>
-  <File Type="BG-BGN" Name="TopSPI2.bgn"/>
-  <File Type="BG-DRC" Name="TopSPI2.drc"/>
-  <File Type="RDI-RDI" Name="TopSPI2.vdi"/>
+  <File Type="BITSTR-LTX" Name="TopSPI.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="TopSPI.sysdef"/>
+  <File Type="BG-BGN" Name="TopSPI.bgn"/>
+  <File Type="BG-DRC" Name="TopSPI.drc"/>
+  <File Type="RDI-RDI" Name="TopSPI.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="TopSPI2_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="TopSPI2_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="TopSPI_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="TopSPI_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
@@ -107,37 +107,9 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/register8bit.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/decoder2to4.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/mux4to1.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/TopSPI2.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="TopSPI2"/>
+      <Option Name="TopModule" Val="TopSPI"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">

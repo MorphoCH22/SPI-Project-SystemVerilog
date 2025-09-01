@@ -50,15 +50,39 @@ TopSPI cut  (
 
 initial begin
     clk <= 0;
-    mDataIn <= 8'd32;
-    sDataIn[0] <= 8'd10;
     reset <= 0;
     repeat (5) @(posedge(clk))
     reset <= 1;
+    // First choose slave1
     selIn <= 4'b1110;
-    transPulse <= 1'b1;
-    repeat (11) @(posedge(clk))
-    transPulse <= 1'b0;
+    repeat (5) begin
+        mDataIn <= $urandom_range(255, 0);
+        sDataIn[0] <= $urandom_range(255, 0);
+        transPulse <= 1'b1;
+        repeat (11) @(posedge(clk))
+        transPulse <= 1'b0;
+    end
+    
+    // Next choose slave2
+    selIn <= 4'b1101;
+    repeat (5) begin
+        mDataIn <= $urandom_range(255, 0);
+        sDataIn[1] <= $urandom_range(255, 0);
+        transPulse <= 1'b1;
+        repeat (11) @(posedge(clk))
+        transPulse <= 1'b0;
+    end
+    
+    // Next choose slave3
+    selIn <= 4'b1011;
+    repeat (5) begin
+        mDataIn <= $urandom_range(255, 0);
+        sDataIn[2] <= $urandom_range(255, 0);
+        transPulse <= 1'b1;
+        repeat (11) @(posedge(clk))
+        transPulse <= 1'b0;
+    end
+    
     $finish;
 end
 

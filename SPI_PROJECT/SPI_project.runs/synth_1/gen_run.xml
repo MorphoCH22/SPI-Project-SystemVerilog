@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1756759529" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/master.dcp">
-  <File Type="PA-TCL" Name="TopSPI2.tcl"/>
-  <File Type="REPORTS-TCL" Name="TopSPI2_reports.tcl"/>
-  <File Type="RDS-RDS" Name="TopSPI2.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="TopSPI2_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="TopSPI2_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="TopSPI2_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="TopSPI2.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="TopSPI2_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="TopSPI2_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1756761854" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/master.dcp">
+  <File Type="PA-TCL" Name="TopSPI.tcl"/>
+  <File Type="REPORTS-TCL" Name="TopSPI_reports.tcl"/>
+  <File Type="RDS-RDS" Name="TopSPI.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="TopSPI_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="TopSPI_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="TopSPI_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="TopSPI.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="TopSPI_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="TopSPI_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/MasterSPI.sv">
@@ -32,37 +32,9 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/register8bit.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/decoder2to4.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/mux4to1.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/TopSPI2.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="TopSPI2"/>
+      <Option Name="TopModule" Val="TopSPI"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
