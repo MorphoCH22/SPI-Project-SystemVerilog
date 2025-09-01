@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/impl_1/TopSPI.tcl"
+  variable script "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/impl_1/TopModuleSPI.tcl"
   variable category "vivado_impl"
 }
 
@@ -118,14 +118,14 @@ OPTRACE "set parameters" START { }
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/synth_1/TopSPI.dcp}}
+  add_files -quiet {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/synth_1/TopModuleSPI.dcp}}
 OPTRACE "read constraints: implementation" START { }
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
-  link_design -top TopSPI -part xc7z007sclg400-1 
+  link_design -top TopModuleSPI -part xc7z007sclg400-1 
 OPTRACE "link_design" END { }
 OPTRACE "gray box cells" START { }
 OPTRACE "gray box cells" END { }
@@ -158,11 +158,11 @@ OPTRACE "read constraints: opt_design_post" START { }
 OPTRACE "read constraints: opt_design_post" END { }
 OPTRACE "opt_design reports" START { REPORT }
   set_param project.isImplRun true
-  generate_parallel_reports -reports { "report_drc -file TopSPI_drc_opted.rpt -pb TopSPI_drc_opted.pb -rpx TopSPI_drc_opted.rpx"  }
+  generate_parallel_reports -reports { "report_drc -file TopModuleSPI_drc_opted.rpt -pb TopModuleSPI_drc_opted.pb -rpx TopModuleSPI_drc_opted.rpx"  }
   set_param project.isImplRun false
 OPTRACE "opt_design reports" END { }
 OPTRACE "Opt Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force TopSPI_opt.dcp
+  write_checkpoint -force TopModuleSPI_opt.dcp
 OPTRACE "Opt Design: write_checkpoint" END { }
   close_msg_db -file opt_design.pb
 } RESULT]
@@ -194,11 +194,11 @@ OPTRACE "read constraints: place_design_post" START { }
 OPTRACE "read constraints: place_design_post" END { }
 OPTRACE "place_design reports" START { REPORT }
   set_param project.isImplRun true
-  generate_parallel_reports -reports { "report_io -file TopSPI_io_placed.rpt" "report_utilization -file TopSPI_utilization_placed.rpt -pb TopSPI_utilization_placed.pb" "report_control_sets -verbose -file TopSPI_control_sets_placed.rpt"  }
+  generate_parallel_reports -reports { "report_io -file TopModuleSPI_io_placed.rpt" "report_utilization -file TopModuleSPI_utilization_placed.rpt -pb TopModuleSPI_utilization_placed.pb" "report_control_sets -verbose -file TopModuleSPI_control_sets_placed.rpt"  }
   set_param project.isImplRun false
 OPTRACE "place_design reports" END { }
 OPTRACE "Place Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force TopSPI_placed.dcp
+  write_checkpoint -force TopModuleSPI_placed.dcp
 OPTRACE "Place Design: write_checkpoint" END { }
   close_msg_db -file place_design.pb
 } RESULT]
@@ -226,7 +226,7 @@ OPTRACE "read constraints: phys_opt_design_post" END { }
 OPTRACE "phys_opt_design report" START { REPORT }
 OPTRACE "phys_opt_design report" END { }
 OPTRACE "Post-Place Phys Opt Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force TopSPI_physopt.dcp
+  write_checkpoint -force TopModuleSPI_physopt.dcp
 OPTRACE "Post-Place Phys Opt Design: write_checkpoint" END { }
   close_msg_db -file phys_opt_design.pb
 } RESULT]
@@ -253,11 +253,11 @@ OPTRACE "read constraints: route_design_post" START { }
 OPTRACE "read constraints: route_design_post" END { }
 OPTRACE "route_design reports" START { REPORT }
   set_param project.isImplRun true
-  generate_parallel_reports -reports { "report_drc -file TopSPI_drc_routed.rpt -pb TopSPI_drc_routed.pb -rpx TopSPI_drc_routed.rpx" "report_methodology -file TopSPI_methodology_drc_routed.rpt -pb TopSPI_methodology_drc_routed.pb -rpx TopSPI_methodology_drc_routed.rpx" "report_power -file TopSPI_power_routed.rpt -pb TopSPI_power_summary_routed.pb -rpx TopSPI_power_routed.rpx" "report_route_status -file TopSPI_route_status.rpt -pb TopSPI_route_status.pb" "report_timing_summary -max_paths 10 -report_unconstrained -file TopSPI_timing_summary_routed.rpt -pb TopSPI_timing_summary_routed.pb -rpx TopSPI_timing_summary_routed.rpx -warn_on_violation " "report_incremental_reuse -file TopSPI_incremental_reuse_routed.rpt" "report_clock_utilization -file TopSPI_clock_utilization_routed.rpt" "report_bus_skew -warn_on_violation -file TopSPI_bus_skew_routed.rpt -pb TopSPI_bus_skew_routed.pb -rpx TopSPI_bus_skew_routed.rpx"  }
+  generate_parallel_reports -reports { "report_drc -file TopModuleSPI_drc_routed.rpt -pb TopModuleSPI_drc_routed.pb -rpx TopModuleSPI_drc_routed.rpx" "report_methodology -file TopModuleSPI_methodology_drc_routed.rpt -pb TopModuleSPI_methodology_drc_routed.pb -rpx TopModuleSPI_methodology_drc_routed.rpx" "report_power -file TopModuleSPI_power_routed.rpt -pb TopModuleSPI_power_summary_routed.pb -rpx TopModuleSPI_power_routed.rpx" "report_route_status -file TopModuleSPI_route_status.rpt -pb TopModuleSPI_route_status.pb" "report_timing_summary -max_paths 10 -report_unconstrained -file TopModuleSPI_timing_summary_routed.rpt -pb TopModuleSPI_timing_summary_routed.pb -rpx TopModuleSPI_timing_summary_routed.rpx -warn_on_violation " "report_incremental_reuse -file TopModuleSPI_incremental_reuse_routed.rpt" "report_clock_utilization -file TopModuleSPI_clock_utilization_routed.rpt" "report_bus_skew -warn_on_violation -file TopModuleSPI_bus_skew_routed.rpt -pb TopModuleSPI_bus_skew_routed.pb -rpx TopModuleSPI_bus_skew_routed.rpx"  }
   set_param project.isImplRun false
 OPTRACE "route_design reports" END { }
 OPTRACE "Route Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force TopSPI_routed.dcp
+  write_checkpoint -force TopModuleSPI_routed.dcp
 OPTRACE "Route Design: write_checkpoint" END { }
 OPTRACE "route_design misc" START { }
   close_msg_db -file route_design.pb
@@ -265,7 +265,7 @@ OPTRACE "route_design misc" START { }
 if {$rc} {
 OPTRACE "route_design write_checkpoint" START { CHECKPOINT }
 OPTRACE "route_design write_checkpoint" END { }
-  write_checkpoint -force TopSPI_routed_error.dcp
+  write_checkpoint -force TopModuleSPI_routed_error.dcp
   step_failed route_design
   return -code error $RESULT
 } else {

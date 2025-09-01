@@ -3,11 +3,11 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sat Aug 30 15:58:21 2025
-# Process ID         : 18544
+# Start of session at: Sun Aug 31 21:41:57 2025
+# Process ID         : 10560
 # Current directory  : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/synth_1
-# Command line       : vivado.exe -log TopSPI.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopSPI.tcl
-# Log file           : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/synth_1/TopSPI.vds
+# Command line       : vivado.exe -log TopModuleSPI.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopModuleSPI.tcl
+# Log file           : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/synth_1/TopModuleSPI.vds
 # Journal file       : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/synth_1\vivado.jou
 # Running On         : Moss
 # Platform           : Windows Server 2016 or Windows 10
@@ -19,6 +19,6 @@
 # Host memory        : 16363 MB
 # Swap memory        : 2818 MB
 # Total Virtual      : 19181 MB
-# Available Virtual  : 6166 MB
+# Available Virtual  : 8373 MB
 #-----------------------------------------------------------
-source TopSPI.tcl -notrace
+source TopModuleSPI.tcl -notrace
