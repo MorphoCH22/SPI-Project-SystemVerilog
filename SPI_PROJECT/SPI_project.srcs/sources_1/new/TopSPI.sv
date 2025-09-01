@@ -1,4 +1,4 @@
-interface SPI_IF (  input clk, reset, transPulse, 
+interface SPI_IF (  input clk, reset, transPulse,
                     input [3:0] selIn,
                     input [7:0] mDataIn,
                     input [3:0][7:0] sDataIn,
@@ -59,7 +59,7 @@ module TopSPI(
                         .MISO(slv.MISO[1]),
                         .MOSI(slv.MOSI)
                         );
-                        
+    
     SlaveSPI slave3     (
                         .clkIn(slv.clkOut),
                         .reset(slv.reset),
@@ -69,7 +69,7 @@ module TopSPI(
                         .MISO(slv.MISO[2]),
                         .MOSI(slv.MOSI)
                         );
-                        
+    
     SlaveSPI slave4     (
                         .clkIn(slv.clkOut),
                         .reset(slv.reset),

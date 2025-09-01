@@ -1,17 +1,26 @@
-
-*** Running vivado
-    with args -log TopSPI2.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source TopSPI2.tcl -notrace
-
-
-
-****** Vivado v2024.2 (64-bit)
-  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
-  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
-  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Mon Sep  1 16:47:02 2025
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Sep  1 16:47:02 2025
+# Process ID         : 5788
+# Current directory  : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/impl_1
+# Command line       : vivado.exe -log TopSPI2.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TopSPI2.tcl -notrace
+# Log file           : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/impl_1/TopSPI2.vdi
+# Journal file       : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/impl_1\vivado.jou
+# Running On         : Moss
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7520U with Radeon Graphics         
+# CPU Frequency      : 2795 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16363 MB
+# Swap memory        : 2818 MB
+# Total Virtual      : 19181 MB
+# Available Virtual  : 7567 MB
+#-----------------------------------------------------------
 source TopSPI2.tcl -notrace
 Command: link_design -top TopSPI2 -part xc7z007sclg400-1
 Design is defaulting to srcset: sources_1
