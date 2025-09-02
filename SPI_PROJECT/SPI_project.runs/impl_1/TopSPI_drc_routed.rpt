@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Mon Sep  1 17:26:56 2025
+| Date         : Mon Sep  1 21:16:44 2025
 | Host         : Moss running 64-bit major release  (build 9200)
 | Command      : report_drc -file TopSPI_drc_routed.rpt -pb TopSPI_drc_routed.pb -rpx TopSPI_drc_routed.rpx
 | Design       : TopSPI
@@ -37,20 +37,22 @@ Table of Contents
 -----------------
 NSTD-1#1 Critical Warning
 Unspecified I/O Standard  
-89 out of 89 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: mas\\.MISO[2:0], mas\\.mDataIn[7:0], mas\\.mDataOut[7:0], mas\\.selIn[3:0],
-mas\\.sel[3:0], slv\\.MISO[2:0], slv\\.sDataIn[0][7:0],
-slv\\.sDataIn[1][7:0], slv\\.sDataIn[2][7:0], slv\\.sDataOut[0][7:0],
-slv\\.sDataOut[1][7:0], slv\\.sDataOut[2][7:0], slv\\.sel[0], slv\\.sel[1],
-slv\\.sel[2] (the first 15 of 23 listed).
+85 out of 85 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: mas\\.MISO[2:0], mas\\.dataIn[3:0], mas\\.muxData[0][3:0],
+mas\\.muxData[1][3:0], mas\\.muxData[2][3:0], mas\\.muxData[3][3:0],
+mas\\.selIn[3:0], mas\\.sel[3:0], multiplexer\\.dataOut[3:0],
+multiplexer\\.muxData[0][3:0], multiplexer\\.muxData[1][3:0],
+multiplexer\\.muxData[2][3:0], multiplexer\\.muxData[3][3:0],
+multiplexer\\.selIn[3:0], slv\\.MISO[2:0] (the first 15 of 30 listed).
 Related violations: <none>
 
 UCIO-1#1 Critical Warning
 Unconstrained Logical Port  
-89 out of 89 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: mas\\.MISO[2:0], mas\\.mDataIn[7:0], mas\\.mDataOut[7:0], mas\\.selIn[3:0],
-mas\\.sel[3:0], slv\\.MISO[2:0], slv\\.sDataIn[0][7:0],
-slv\\.sDataIn[1][7:0], slv\\.sDataIn[2][7:0], slv\\.sDataOut[0][7:0],
-slv\\.sDataOut[1][7:0], slv\\.sDataOut[2][7:0], slv\\.sel[0], slv\\.sel[1],
-slv\\.sel[2] (the first 15 of 23 listed).
+85 out of 85 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: mas\\.MISO[2:0], mas\\.dataIn[3:0], mas\\.muxData[0][3:0],
+mas\\.muxData[1][3:0], mas\\.muxData[2][3:0], mas\\.muxData[3][3:0],
+mas\\.selIn[3:0], mas\\.sel[3:0], multiplexer\\.dataOut[3:0],
+multiplexer\\.muxData[0][3:0], multiplexer\\.muxData[1][3:0],
+multiplexer\\.muxData[2][3:0], multiplexer\\.muxData[3][3:0],
+multiplexer\\.selIn[3:0], slv\\.MISO[2:0] (the first 15 of 30 listed).
 Related violations: <none>
 
 ZPS7-1#1 Warning

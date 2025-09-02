@@ -1,39 +1,43 @@
-interface SPI_IF (  input clk, reset, transPulse, 
+interface SPI_IF (  input clk, reset, transPulse,
                     input [3:0] selIn,
-                    input [7:0] mDataIn,
-                    input [2:0][7:0] sDataIn,
-                    output [7:0] mDataOut,
-                    output [2:0][7:0] sDataOut
+                    input [3:0] dataIn,
+                    output [3:0] dataOut
                  );
+                 
+    logic [3:0][3:0] muxData;
                  
     logic [2:0] MISO;
     logic clkOut;
     logic MOSI;
     logic [3:0] sel;
     
-    modport master  (input clk, reset, transPulse, selIn, mDataIn, MISO,
-                    output MOSI, clkOut, sel, mDataOut);
-    modport slave   (input clkOut, MOSI, sel, reset, sDataIn, 
-                    output sDataOut, MISO );
+    modport mux (input muxData, selIn, output dataOut);
+    
+    modport master  (input clk, reset, transPulse, selIn, dataIn, MISO,
+                    output MOSI, clkOut, sel, muxData);
+    modport slave   (input clkOut, MOSI, sel, reset, 
+                    output muxData, MISO );
     
     clocking ck1 @ (posedge clk);
-        output #1ns transPulse, selIn, mDataIn, sDataIn;
-        input #1ns mDataOut, sDataOut;
+        output #1ns reset, transPulse, selIn, dataIn;
+        input #1ns dataOut;
     endclocking
 endinterface
 
 module TopSPI(
         SPI_IF.master mas,
-        SPI_IF.slave slv
+        SPI_IF.slave slv,
+        
+        SPI_IF.mux multiplexer
     );
     
     MasterSPI master    (
                         .clkIn(mas.clk),
                         .reset(mas.reset),
-                        .dataIn(mas.mDataIn),
+                        .dataIn(mas.dataIn),
                         .selIn(mas.selIn),
                         .transPulse(mas.transPulse),
-                        .data(mas.mDataOut),
+                        .data(mas.muxData[3]),
                         .MISO(mas.MISO),
                         .clkOut(mas.clkOut),
                         .MOSI(mas.MOSI),
@@ -43,9 +47,8 @@ module TopSPI(
     SlaveSPI slave1     (
                         .clkIn(slv.clkOut),
                         .reset(slv.reset),
-                        .dataIn(slv.sDataIn[0]),
                         .selIn(slv.sel[0]),
-                        .data(slv.sDataOut[0]),
+                        .data(slv.muxData[0]),
                         .MISO(slv.MISO[0]),
                         .MOSI(slv.MOSI)
                         );
@@ -53,9 +56,8 @@ module TopSPI(
     SlaveSPI slave2     (
                         .clkIn(slv.clkOut),
                         .reset(slv.reset),
-                        .dataIn(slv.sDataIn[1]),
                         .selIn(slv.sel[1]),
-                        .data(slv.sDataOut[1]),
+                        .data(slv.muxData[1]),
                         .MISO(slv.MISO[1]),
                         .MOSI(slv.MOSI)
                         );
@@ -63,11 +65,16 @@ module TopSPI(
     SlaveSPI slave3     (
                         .clkIn(slv.clkOut),
                         .reset(slv.reset),
-                        .dataIn(slv.sDataIn[2]),
                         .selIn(slv.sel[2]),
-                        .data(slv.sDataOut[2]),
+                        .data(slv.muxData[2]),
                         .MISO(slv.MISO[2]),
                         .MOSI(slv.MOSI)
                         );
+                    
+    mux4to1 mux (
+                .dataIn(multiplexer.muxData),
+                .sel(multiplexer.selIn),
+                .dataOut(multiplexer.dataOut)
+                );
     
 endmodule

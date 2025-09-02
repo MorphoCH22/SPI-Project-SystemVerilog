@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon Sep  1 17:24:22 2025
-# Process ID         : 1796
+# Start of session at: Mon Sep  1 21:14:02 2025
+# Process ID         : 16864
 # Current directory  : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/synth_1
 # Command line       : vivado.exe -log TopSPI.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopSPI.tcl
 # Log file           : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.runs/synth_1/TopSPI.vds
@@ -19,6 +19,6 @@
 # Host memory        : 16363 MB
 # Swap memory        : 2818 MB
 # Total Virtual      : 19181 MB
-# Available Virtual  : 5896 MB
+# Available Virtual  : 8068 MB
 #-----------------------------------------------------------
 source TopSPI.tcl -notrace

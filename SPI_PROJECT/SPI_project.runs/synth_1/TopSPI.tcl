@@ -56,6 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z007sclg400-1
 
@@ -74,6 +76,7 @@ read_verilog -library xil_defaultlib -sv {
   {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/MasterSPI.sv}
   {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/SlaveSPI.sv}
   {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/TopSPI.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/mux4to1.sv}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

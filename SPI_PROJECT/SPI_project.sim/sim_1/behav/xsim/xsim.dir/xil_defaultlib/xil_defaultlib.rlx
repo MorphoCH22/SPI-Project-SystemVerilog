@@ -3,7 +3,8 @@
 Nov  8 2024
 22:36:57
 C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,
-C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sim_1/new/TestbenchSPI.sv,1756763432,systemVerilog,,,,SPI_IF;TestbenchSPI,,uvm,,,,,,
-C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/MasterSPI.sv,1756579449,systemVerilog,,C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/SlaveSPI.sv,,MasterSPI,,uvm,,,,,,
-C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/SlaveSPI.sv,1756350867,systemVerilog,,C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/TopSPI.sv,,SlaveSPI,,uvm,,,,,,
-C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/TopSPI.sv,1756761755,systemVerilog,,C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sim_1/new/TestbenchSPI.sv,,TopSPI,,uvm,,,,,,
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sim_1/new/TestbenchSPI.sv,1756775473,systemVerilog,,,,SPI_IF;TestbenchSPI,,uvm,,,,,,
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/MasterSPI.sv,1756775574,systemVerilog,,C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/SlaveSPI.sv,,MasterSPI,,uvm,,,,,,
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/SlaveSPI.sv,1756774123,systemVerilog,,C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/TopSPI.sv,,SlaveSPI,,uvm,,,,,,
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/TopSPI.sv,1756774183,systemVerilog,,C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/mux4to1.sv,,TopSPI,,uvm,,,,,,
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sources_1/new/mux4to1.sv,1756773252,systemVerilog,,C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.srcs/sim_1/new/TestbenchSPI.sv,,mux4to1,,uvm,,,,,,
